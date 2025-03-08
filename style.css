@@ -18,7 +18,7 @@ body {
 
 .box {
     height: 690px; 
-    width: 610px;
+    width: 600px;
     background-color: gray; 
     font-size: 20pt;
     overflow: hidden; /* Ensure the image doesn't overflow the container */
