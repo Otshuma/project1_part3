@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    background-color: rgb(234, 216, 187);
+}
+
+.studio {
+    min-height: 750px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 690px; 
+    width: 610px;
+    background-color: gray; 
+    font-size: 20pt;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.box img {
+    width: 100%; /* Make the image fill the width of the .box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    display: block; /* Remove any default inline spacing */
+}
+
+h1 {
+    color: rgb(118, 75, 15);
+    font-family: Stint Ultra Condensed;
+    font-weight: 400;
+    text-align-last: justify;
+    position: relative;
+    padding: 0px;
+    margin-top: -55px; /* Added to remove space above the h1 */
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+P { 
+    font-family: monospace;
+    color: rgb(246, 242, 15);
+    font-size: 15px;
+    padding: 40px;
+}
+
+.risd {
+    transition: font-size 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.risd:hover {
+    font-size: 2.5em; /* Increase the font size on hover */
+}
+
+.typographics {
+    position: relative;
+    cursor: pointer;
+}
+
+.typographics::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 159px;
+    background-image: url('typographics.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.typographics:hover::after {
+    display: block;
+}
+
+/* latin */
+.latin {
+    position: relative;
+    cursor: pointer;
+}
+
+.latin::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: url('Lingram.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.latin:hover::after {
+    display: block;
+}
+
+/* tobias */
+.tobais {
+    position: relative;
+    cursor: pointer;
+}
+
+.tobais::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 300px;
+    background-image: url('MK48955_BeyondTellerrand_Tobias_Frere-Jones\ copy.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.tobais:hover::after {
+    display: block;
+}
+
+
+/* writing */
+.writing {
+    position: relative;
+    cursor: pointer;
+}
+
+.writing::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 163px;
+    border: 0px;
+    background-image: url('Isiko.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.writing:hover::after {
+    display: block;
+}
+
+/* compedium */
+.compendium {
+    position: relative;
+    cursor: pointer;
+}
+
+.compendium::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 200px;
+    background-image: url('Tshuma-17.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.compendium:hover::after {
+    display: block;
+}
+
+/* ross*/
+.ross {
+    position: relative;
+    cursor: pointer;
+}
+
+.ross::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 450px;
+    background-image: url('Samuel-Ross.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.ross:hover::after {
+    display: block;
+}
+
+/* daan*/
+.daan{
+    position: relative;
+    cursor: pointer;
+}
+
+.daan::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background-image: url('absent.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.daan:hover::after {
+    display: block;
+}
+
+/* christine*/
+.christine {
+    position: relative;
+    cursor: pointer;
+}
+
+.christine::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('Christine.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.christine:hover::after {
+    display: block;
+}
+
+/* fd */
+.fd {
+    position: relative;
+    cursor: pointer;
+}
+
+.fd::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background-image: url('Christinecopy.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-color: transparent; /* Fallback color for debugging */
+}
+
+.fd:hover::after {
+    display: block;
+}
+
+.letterforms {
+    transition: font-size 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.letterforms:hover {
+    font-size: 2.0em; /* Increase the font size on hover */
+}
